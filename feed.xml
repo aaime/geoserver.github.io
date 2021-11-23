@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-23T13:42:33+00:00</updated><id>/feed.xml</id><title type="html">GeoServer</title><subtitle>GeoServer latest posts</subtitle><author><name>GeoServer community</name></author><entry><title type="html">GeoServer 2.20.1 Released</title><link href="/announcements/2021/11/22/geoserver-2-20-1-released.html" rel="alternate" type="text/html" title="GeoServer 2.20.1 Released" /><published>2021-11-22T00:00:00+00:00</published><updated>2021-11-22T00:00:00+00:00</updated><id>/announcements/2021/11/22/geoserver-2-20-1-released</id><content type="html" xml:base="/announcements/2021/11/22/geoserver-2-20-1-released.html">&lt;p&gt;We are happy to announce GeoServer &lt;a href=&quot;/release/2.20.1/&quot;&gt;2.20.1&lt;/a&gt; release is available with downloads (&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.1/geoserver-2.20.1-bin.zip/download&quot;&gt;bin&lt;/a&gt;, &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.1/geoserver-2.20.1-war.zip/download&quot;&gt;war&lt;/a&gt;, &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.1/GeoServer-2.20.1-winsetup.exe/download&quot;&gt;windows&lt;/a&gt;), along with &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.1/geoserver-2.20.1-htmldoc.zip/download&quot;&gt;docs&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.1/extensions/&quot;&gt;extensions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is a stable release of the 2.20.x series recommended for production systems. This release was made in conjunction with GeoTools 26.1.&lt;/p&gt;
+
+&lt;h3 id=&quot;windows-installer&quot;&gt;Windows installer&lt;/h3&gt;
+
+&lt;p&gt;We are pleased to announce the return of the GeoServer windows installer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.20/windows-installer.png&quot; alt=&quot;Windows Installer&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Windows installer in action&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks to Sander and the GeoCat team for completing this work on behalf of the GeoServer PSC, everyone on the user list who helped test, and Stefan Overkamp for supplying screen snaps for the documentation.&lt;/p&gt;
+
+&lt;p&gt;Reference:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.geoserver.org/stable/en/user/installation/win_installer.html&quot;&gt;Windows Installer&lt;/a&gt; (User Guide)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;improvements-and-fixes&quot;&gt;Improvements and Fixes&lt;/h3&gt;
+
+&lt;p&gt;New Feature&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10228&quot;&gt;GEOS-10228&lt;/a&gt; Wrap the category text values of a legend&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10298&quot;&gt;GEOS-10298&lt;/a&gt; OpenSearch REST management API: allow creation of products via PUT&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10265&quot;&gt;GEOS-10265&lt;/a&gt; WFS-T Bulk Transaction optimization&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10268&quot;&gt;GEOS-10268&lt;/a&gt; Null Support in Features Templating&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10299&quot;&gt;GEOS-10299&lt;/a&gt; Reprojection console can now work with AUTO codes&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10292&quot;&gt;GEOS-10292&lt;/a&gt; Fixed issue changing worker pool size in raster access&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10289&quot;&gt;GEOS-10289&lt;/a&gt; Improve Shapefile Directory performance when working with a huge number of files&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10282&quot;&gt;GEOS-10282&lt;/a&gt; GeoServer translations files incorrectly decoded assuming UTF-8 causing translation files like GeoServerApplication_de.properties leading characters represented as question marks&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10281&quot;&gt;GEOS-10281&lt;/a&gt; GeoServer log level was not being picked up with during Catalog reload&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10277&quot;&gt;GEOS-10277&lt;/a&gt; Add a special keyword for semi-colon as a CSV Separator in WFS request&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10273&quot;&gt;GEOS-10273&lt;/a&gt; GeofenceAccesManager index out of bound issue when requesting nested layerGroups&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;community-updates&quot;&gt;Community Updates&lt;/h3&gt;
+
+&lt;p&gt;For developers building from source, our community modules are a great place to collaborate on functionality and improvements.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10301&quot;&gt;GEOS-10301&lt;/a&gt; The ogc-api community module resolved conflicting woodstax parser preventing editing of SLD styles&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;about-geoserver-220&quot;&gt;About GeoServer 2.20&lt;/h2&gt;
+
+&lt;p&gt;Additional information on GeoServer 2.20 series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.geoserver.org/latest/en/user/services/internationalization/index.html&quot;&gt;Internationalization of title and abstract&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/19Cmld0_VFePh1g4qUSfqNWWB0t-teClFpT3eUqpYGos/edit?usp=sharing&quot;&gt;State of GeoServer 2.20 edition&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.geoserver.org/stable/en/user/installation/win_installer.html&quot;&gt;Windows Insatller&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Release notes: &lt;a href=&quot;https://github.com/geoserver/geoserver/releases/tag/2.20.1&quot;&gt;2.20.1&lt;/a&gt;, &lt;a href=&quot;https://github.com/geoserver/geoserver/releases/tag/2.20.0&quot;&gt;2.20.0&lt;/a&gt;, &lt;a href=&quot;https://github.com/geoserver/geoserver/releases/tag/2.20-RC&quot;&gt;2.20-RC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jody Garnett</name></author><category term="Announcements" /><category term="Release" /><summary type="html">We are happy to announce GeoServer 2.20.1 release is available with downloads (bin, war, windows), along with docs and extensions.</summary></entry><entry><title type="html">GeoServer 2.19.3 Released</title><link href="/announcements/2021/10/27/geoserver-2-19-3-released.html" rel="alternate" type="text/html" title="GeoServer 2.19.3 Released" /><published>2021-10-27T00:00:00+00:00</published><updated>2021-10-27T00:00:00+00:00</updated><id>/announcements/2021/10/27/geoserver-2-19-3-released</id><content type="html" xml:base="/announcements/2021/10/27/geoserver-2-19-3-released.html">&lt;h1 id=&quot;geoserver-2193-released&quot;&gt;GeoServer 2.19.3 Released&lt;/h1&gt;
+
+&lt;p&gt;The GeoServer team are happy to announce GeoServer
+&lt;a href=&quot;/release/2.19.3/&quot;&gt;2.19.3&lt;/a&gt; release is available for download
+(&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.3/geoserver-2.19.3-bin.zip/download&quot;&gt;zip&lt;/a&gt;
+and
+&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.3/geoserver-2.19.3-war.zip/download&quot;&gt;war&lt;/a&gt;)
+along with
+&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.3/geoserver-2.19.3-htmldoc.zip/download&quot;&gt;docs&lt;/a&gt;
+and
+&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.3/extensions/&quot;&gt;extensions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This GeoServer 2.19.3 release was produced in conjunction with GeoTools 25.3, this is a maintenance release recommended for production systems.&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone who contributed, and to Ian Turton (Astun Technology) for making this release.&lt;/p&gt;
+
+&lt;h2 id=&quot;improvements-and-fixes&quot;&gt;Improvements and Fixes&lt;/h2&gt;
+
+&lt;h3 id=&quot;bug&quot;&gt;Bug&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9937&quot;&gt;GEOS-9937&lt;/a&gt;] - Name of styles with colons are incorrect in REST API&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10072&quot;&gt;GEOS-10072&lt;/a&gt;] - WMS dimension default values and nearest match can pollute caches (in GWC and beyond)&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10132&quot;&gt;GEOS-10132&lt;/a&gt;] - Deadlock at org.geotools.xsd.XSD.getSchema&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10133&quot;&gt;GEOS-10133&lt;/a&gt;] - Connecting to WMS Service via Http Proxy&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10158&quot;&gt;GEOS-10158&lt;/a&gt;] - POST request -&amp;gt; j_spring_security_check is in http plain even if proxy base url is in https&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10161&quot;&gt;GEOS-10161&lt;/a&gt;] - Smart data loader missing PostgreSQL type in DomainModelBuilder&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10162&quot;&gt;GEOS-10162&lt;/a&gt;] - GeoServerOAuthAuthenticationFilter creates Anonymous authentication when preAuthenticated principal is not present&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10173&quot;&gt;GEOS-10173&lt;/a&gt;] - CoverageViewReader’s format not being secured with Geofence-Geoserver&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10188&quot;&gt;GEOS-10188&lt;/a&gt;] - Features templating when deleting a templateInfo all the template contents will be deleted&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10193&quot;&gt;GEOS-10193&lt;/a&gt;] - Indirect imports will drop the target table if there is any failure during the import process&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10198&quot;&gt;GEOS-10198&lt;/a&gt;] - Features Templating - TemplateRuleService save rule bug&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10200&quot;&gt;GEOS-10200&lt;/a&gt;] - GetLegendGraphic can fail if SCALE removes all rules&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10208&quot;&gt;GEOS-10208&lt;/a&gt;] - Broken link in DDS/BIL community plugin documentation&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10213&quot;&gt;GEOS-10213&lt;/a&gt;] - WMS requests fail on LayerGroup default style names, when used in GetMap/GetFeatureInfo/GetLegendGraphics&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10215&quot;&gt;GEOS-10215&lt;/a&gt;] - Layers nested inside a group maintain their prefix even in workspace specific services&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10227&quot;&gt;GEOS-10227&lt;/a&gt;] - Features Templating - Included templates are not reloaded on file modifications&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10266&quot;&gt;GEOS-10266&lt;/a&gt;] - Features Templating makes getfeatureinfo fail for raster data&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10273&quot;&gt;GEOS-10273&lt;/a&gt;] - GeofenceAccesManager throws index out of bound when requesting nested layerGroups&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-feature&quot;&gt;New Feature&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10063&quot;&gt;GEOS-10063&lt;/a&gt;] - Add XML templating support to features-templating community plug-in&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10118&quot;&gt;GEOS-10118&lt;/a&gt;] - Features templating add include directive in xml templates&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10153&quot;&gt;GEOS-10153&lt;/a&gt;] - Features templating UI&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10154&quot;&gt;GEOS-10154&lt;/a&gt;] - Feature templating - Add HTML template support&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10165&quot;&gt;GEOS-10165&lt;/a&gt;] - Features templating add Rest API&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10166&quot;&gt;GEOS-10166&lt;/a&gt;] - Features templating - Add CQL profile field in template rule UI&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10217&quot;&gt;GEOS-10217&lt;/a&gt;] - Features templating add GetFeatureInfo support&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;improvement&quot;&gt;Improvement&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10080&quot;&gt;GEOS-10080&lt;/a&gt;] - Features-templating allows the possibility to reference domain attribute in templates&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10081&quot;&gt;GEOS-10081&lt;/a&gt;] - Features-templating allow the encoding of xml attribute in nodes encoded from a Static or Dynamic builder&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10119&quot;&gt;GEOS-10119&lt;/a&gt;] - Features templating add managed support and allow simplified templates structure&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10172&quot;&gt;GEOS-10172&lt;/a&gt;] - Add support for GeoPackage output in WPS download&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10194&quot;&gt;GEOS-10194&lt;/a&gt;] - Improve importer LOGGING&lt;/li&gt;
+  &lt;li&gt;[&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10265&quot;&gt;GEOS-10265&lt;/a&gt;] - WFS-T Bulk Transaction optimization&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For details check the &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16824&quot;&gt;2.19.3&lt;/a&gt; release notes.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-geoserver-219&quot;&gt;About GeoServer 2.19&lt;/h2&gt;
+
+&lt;p&gt;Additional information on GeoServer 2.19 series:&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href=&quot;https://docs.geoserver.org/stable/en/user/tutorials/ GetFeatureInfo/raster.html&quot;&gt;WMS GetFeatureInfo includes labels from ColorMap &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-196&quot;&gt;Promote WMTS multidim to extension&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-195&quot;&gt;Promote WPS-Download to extension&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-194&quot;&gt;Promote params-extractor to extension&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-193&quot;&gt;Promote GWC-S3 to extension&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-197&quot;&gt;Promote WPS-JDBC to extension status&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-200&quot;&gt;Promote MapML to extension status&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href=&quot;main-branch.html&quot;&gt;GeoServer repository transition to main branch&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Release notes ( &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16824&quot;&gt;2.19.3&lt;/a&gt;| &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&amp;amp;version=16821&quot;&gt;2.19.2&lt;/a&gt;| &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&amp;amp;version=16816&quot;&gt;2.19.1&lt;/a&gt; | &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa? projectId=10000&amp;amp;version=16814&quot;&gt;2.19.0&lt;/a&gt; | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa? projectId=10000&amp;amp;version=16766&quot;&gt;2.19-RC&lt;/a&gt; )&lt;/p&gt;</content><author><name>GeoServer community</name></author><category term="Announcements" /><category term="Release" /><summary type="html">GeoServer 2.19.3 Released</summary></entry><entry><title type="html">GeoServer 2.20.0 Released</title><link href="/announcements/2021/10/18/geoserver-2-20-released.html" rel="alternate" type="text/html" title="GeoServer 2.20.0 Released" /><published>2021-10-18T00:00:00+00:00</published><updated>2021-10-18T00:00:00+00:00</updated><id>/announcements/2021/10/18/geoserver-2-20-released</id><content type="html" xml:base="/announcements/2021/10/18/geoserver-2-20-released.html">&lt;p&gt;We are happy to announce GeoServer &lt;a href=&quot;/release/2.20.0/&quot;&gt;2.20.0&lt;/a&gt; is available for download (&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-bin.zip/download&quot;&gt;bin&lt;/a&gt;, &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-war.zip/download&quot;&gt;war&lt;/a&gt;, &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/GeoServer-2.20.0-winsetup.exe/download&quot;&gt;windows&lt;/a&gt;) along with &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/geoserver-2.20.0-htmldoc.zip/download&quot;&gt;docs&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20.0/extensions/&quot;&gt;extensions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This the first stable release of the 2.20.x series and recommended for production systems. This release is made in made in conjunction with GeoTools 26.0 and GeoWebCache 1.20.0.&lt;/p&gt;
+
+&lt;h2 id=&quot;internationalization&quot;&gt;Internationalization&lt;/h2&gt;
+
+&lt;p&gt;The leading feature for this release is the internationalization of Title, Abstract and Contact details for:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;WMS 1.1 and 1.3&lt;/li&gt;
+  &lt;li&gt;WFS 2.0&lt;/li&gt;
+  &lt;li&gt;WCS 2.0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See documentation for &lt;a href=&quot;https://docs.geoserver.org/latest/en/user/services/internationalization/index.html&quot;&gt;internationalization support&lt;/a&gt; and &lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-203&quot;&gt;GSIP-203 proposal&lt;/a&gt; for details.&lt;/p&gt;
+
+&lt;p&gt;New feature:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10123&quot;&gt;GEOS-10123&lt;/a&gt; Internationalization for title and abstract&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10207&quot;&gt;GEOS-10207&lt;/a&gt; Allow creation of internationalized raster legends&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10190&quot;&gt;GEOS-10190&lt;/a&gt; i18n support for Contact Information&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10185&quot;&gt;GEOS-10185&lt;/a&gt; LayerGroup legend internationalization styles returns multiple values&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10177&quot;&gt;GEOS-10177&lt;/a&gt; Allow Default Translation&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10129&quot;&gt;GEOS-10129&lt;/a&gt; Add language function for multilingual support in sld&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Improvements and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10205&quot;&gt;GEOS-10205&lt;/a&gt; Layer with i18n title might appear twice in the capabilities, while being contained in a named tree&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10204&quot;&gt;GEOS-10204&lt;/a&gt; Default locale is not being used while producing internationalized outputs in Capabilities document&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10160&quot;&gt;GEOS-10160&lt;/a&gt; Requested Language in GetCapabilities&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.20/i18n.png&quot; alt=&quot;Configuring multiple languages for title and abstract&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;modules-status-information-for-extensions&quot;&gt;Modules Status Information for Extensions&lt;/h2&gt;
+
+&lt;p&gt;Thanks to Ian for completing a [long outstanding request][https://osgeo-org.atlassian.net/browse/GEOS-10067] to provide listing everything you have installed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Server Status page now provides a complete list of the loaded modules and extensions&lt;/li&gt;
+  &lt;li&gt;This extension list can also be checked via REST API (allowing scripts to check if the functionality they require has been installed)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;New Feature:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10067&quot;&gt;GEOS-10067&lt;/a&gt; Implement module status in extensions (&lt;a href=&quot;https://github.com/bencaradocdavies/geoserver/wiki/GSIP-143&quot;&gt;GISP-143&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Improvements and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9967&quot;&gt;GEOS-9967&lt;/a&gt; Add Module Status implementation for CSW Extension&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.20/modules.png&quot; alt=&quot;Module listing in the status page&quot; /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;updates-and-quality-assurance&quot;&gt;Updates and quality assurance&lt;/h2&gt;
+
+&lt;p&gt;GeoServer continues to be build with the latest open source technologies:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GeoTools 26-RC&lt;/li&gt;
+  &lt;li&gt;GeoWebCache 1.20-RC&lt;/li&gt;
+  &lt;li&gt;JAI-EXT 1.1.20&lt;/li&gt;
+  &lt;li&gt;ImageIO-EXT 1.3.10&lt;/li&gt;
+  &lt;li&gt;JTS 1.18.2&lt;/li&gt;
+  &lt;li&gt;GeoFence 3.5.0&lt;/li&gt;
+  &lt;li&gt;Flatgeobuf to 3.10.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The team continues to work with automated code checks, gradually improving the codebase and introducing checks to ensure issues are not re-introduced over time:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Check system.out.println and printStackTrace statements are not accidentally committed, which can add to logs&lt;/li&gt;
+  &lt;li&gt;Cognitive complexity checks, start cleaning up methods that are too complex&lt;/li&gt;
+  &lt;li&gt;Use StandardCharsets when possible, rather than String&lt;/li&gt;
+  &lt;li&gt;Avoid unnecessary object wrapper creation&lt;/li&gt;
+  &lt;li&gt;Use short arrays initializers&lt;/li&gt;
+  &lt;li&gt;Work towards consistent style with checks to avoid C style array declarations, add missing @Override annotations, and check java generics are used&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This dedication helps provide confidence in the technology we publish.&lt;/p&gt;
+
+&lt;h3 id=&quot;wms&quot;&gt;WMS&lt;/h3&gt;
+
+&lt;p&gt;Fixes and improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-4939&quot;&gt;GEOS-4939&lt;/a&gt; Coordinate system ISSUE - S-JTSK Krovak East North (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EPSG: 5514&lt;/code&gt;) - cannot be set up&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10032&quot;&gt;GEOS-10032&lt;/a&gt; Group Layer in Catalog Mode Hide not in capabilities when unauthenticated&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10013&quot;&gt;GEOS-10013&lt;/a&gt; Mark invalid error while validating or saving a Style&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9907&quot;&gt;GEOS-9907&lt;/a&gt; Enable usage of labelPoint function in GetFeatureInfo requests&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9759&quot;&gt;GEOS-9759&lt;/a&gt; Set Response Cache Headers in LayerGroups&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following functionality has been removed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10001&quot;&gt;GEOS-10001&lt;/a&gt; Remove animator and animated GIF support from WMS&lt;/p&gt;
+
+    &lt;p&gt;Use of WPS Animation process is provided as an alternative&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wfs&quot;&gt;WFS&lt;/h2&gt;
+
+&lt;p&gt;Fixes and improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10222&quot;&gt;GEOS-10222&lt;/a&gt; WFS CSV OutputFormat delimiter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wps&quot;&gt;WPS&lt;/h2&gt;
+
+&lt;p&gt;Fixes and improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9990&quot;&gt;GEOS-9990&lt;/a&gt; Add GUI and REST API to configure the wps-download module&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10073&quot;&gt;GEOS-10073&lt;/a&gt; WPS animation download process should report about eventual time mis-matches&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wmts&quot;&gt;WMTS&lt;/h2&gt;
+
+&lt;p&gt;Improvements and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10008&quot;&gt;GEOS-10008&lt;/a&gt; Have GeoServerTileLayer implementing TileJSONProvider&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9971&quot;&gt;GEOS-9971&lt;/a&gt; GeoWebCache S3 plugin require AWS creds&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;inspire-extension&quot;&gt;INSPIRE Extension&lt;/h2&gt;
+
+&lt;p&gt;New feature:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10124&quot;&gt;GEOS-10124&lt;/a&gt; Add Language support to INSPIRE extension&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Improvements and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10211&quot;&gt;GEOS-10211&lt;/a&gt; Unable to pass INSPIRE validation: Version is mandatory (WMS)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10192&quot;&gt;GEOS-10192&lt;/a&gt; Inspire extension consistent outputResponse element&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10141&quot;&gt;GEOS-10141&lt;/a&gt; Inspire extension better error message on language not found&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10163&quot;&gt;GEOS-10163&lt;/a&gt; Incorrect INSPIRE namespace URI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;and-more&quot;&gt;And more!&lt;/h2&gt;
+
+&lt;p&gt;Fixes and Improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10092&quot;&gt;GEOS-10092&lt;/a&gt; Fix the page description of remote WMS/WMTS connection&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10189&quot;&gt;GEOS-10189&lt;/a&gt; I18n improvement using the UTF-8 charset for Chinese translations&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10033&quot;&gt;GEOS-10033&lt;/a&gt; Geoserver startup and shutdown shell scripts don’t handle path with spaces&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9381&quot;&gt;GEOS-9381&lt;/a&gt; Conversion from boolean true/false in geoserver to SQL Server bit 0/1, is broken&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9970&quot;&gt;GEOS-9970&lt;/a&gt; MapML GetFeature bug fix for CRS authority&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10201&quot;&gt;GEOS-10201&lt;/a&gt; Geoserver fails to start on Windows 11 beta&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10264&quot;&gt;GEOS-10264&lt;/a&gt; Address startup warning File option not set for appender [geoserverlogfile]&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9950&quot;&gt;GEOS-9950&lt;/a&gt; MapPreviewPage logs unable to find property: format.wfs.text/csv continuously&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10265&quot;&gt;GEOS-10265&lt;/a&gt; WFS-T Bulk Transaction optimization&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;about-geoserver-220&quot;&gt;About GeoServer 2.20&lt;/h2&gt;
+
+&lt;p&gt;Additional information on GeoServer 2.20 series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.geoserver.org/latest/en/user/services/internationalization/index.html&quot;&gt;Internationalization of title and abstract&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/19Cmld0_VFePh1g4qUSfqNWWB0t-teClFpT3eUqpYGos/edit?usp=sharing&quot;&gt;State of GeoServer 2.20 edition&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Release notes: &lt;a href=&quot;https://github.com/geoserver/geoserver/releases/tag/2.20.0&quot;&gt;2.20.0&lt;/a&gt;, &lt;a href=&quot;https://github.com/geoserver/geoserver/releases/tag/2.20-RC&quot;&gt;2.20-RC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Andrea Aime</name></author><category term="Announcements" /><category term="Release" /><summary type="html">We are happy to announce GeoServer 2.20.0 is available for download (bin, war, windows) along with docs and extensions.</summary></entry><entry><title type="html">GeoServer 2.20-RC Released</title><link href="/announcements/2021/09/14/geoserver-2-20-rc-released.html" rel="alternate" type="text/html" title="GeoServer 2.20-RC Released" /><published>2021-09-14T00:00:00+00:00</published><updated>2021-09-14T00:00:00+00:00</updated><id>/announcements/2021/09/14/geoserver-2-20-rc-released</id><content type="html" xml:base="/announcements/2021/09/14/geoserver-2-20-rc-released.html">&lt;p&gt;We are happy to announce GeoServer &lt;a href=&quot;/release/2.20-RC/&quot;&gt;2.20-RC&lt;/a&gt; release candidate is available for testing. Downloads are available (&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20-RC/geoserver-2.20-RC-bin.zip/download&quot;&gt;zip&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20-RC/geoserver-2.20-RC-war.zip/download&quot;&gt;war&lt;/a&gt;) along with &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20-RC/geoserver-2.20-RC-htmldoc.zip/download&quot;&gt;docs&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.20-RC/extensions/&quot;&gt;extensions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is a GeoServer release candidate made in conjunction with GeoTools 26-RC and GeoWebCache 1.20-RC.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Release candidates are a community building exercise and are not intended for production use.&lt;/li&gt;
+  &lt;li&gt;We ask the community (everyone: individuals, organizations, service providers) to download and thoroughly test this release candidate and report back.&lt;/li&gt;
+  &lt;li&gt;Testing priority is the new internationalization support&lt;/li&gt;
+  &lt;li&gt;Participating in testing release candidates is a key expectation of our &lt;a href=&quot;http://www.ianturton.com/talks/foss4g.html#/&quot;&gt;open source social contract&lt;/a&gt;. We make an effort to thank each person who tests in our release announcement and project presentations!&lt;/li&gt;
+  &lt;li&gt;GeoServer &lt;a href=&quot;http://geoserver.org/support/&quot;&gt;commercial service providers&lt;/a&gt; are fully expected to test on behalf of their customers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;release-candidate-testing-priorities&quot;&gt;Release Candidate Testing Priorities&lt;/h2&gt;
+
+&lt;p&gt;This is an exciting release and a lot of great new functionality has been added. We would like to ask for your assistance testing the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The number one testing priority is to try out GeoServer with your data! &lt;em&gt;Mass market open source thrives on having many people to review. Scientific open source like GeoServer thrives on exposure to many datasets&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;The rest of this blog post highlights new features for GeoServer 2.20, please try out these features, read the documentation links, and ask questions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Known Issues:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;No issues reported at this time, you could be the first!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;internationalization&quot;&gt;Internationalization&lt;/h2&gt;
+
+&lt;p&gt;The leading feature for this release is the internationalization of Title, Abstract and Contact details for:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;WMS 1.1 and 1.3&lt;/li&gt;
+  &lt;li&gt;WFS 2.0&lt;/li&gt;
+  &lt;li&gt;WCS 2.0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See documentation for &lt;a href=&quot;https://docs.geoserver.org/latest/en/user/services/internationalization/index.html&quot;&gt;internationalization support&lt;/a&gt; and &lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-203&quot;&gt;GSIP-203 proposal&lt;/a&gt; for details.&lt;/p&gt;
+
+&lt;p&gt;New feature:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10123&quot;&gt;GEOS-10123&lt;/a&gt; Internationalization for title and abstract&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10207&quot;&gt;GEOS-10207&lt;/a&gt; Allow creation of internationalized raster legends&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10190&quot;&gt;GEOS-10190&lt;/a&gt; i18n support for Contact Information&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10185&quot;&gt;GEOS-10185&lt;/a&gt; LayerGroup legend internationalization styles returns multiple values&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10177&quot;&gt;GEOS-10177&lt;/a&gt; Allow Default Translation&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10129&quot;&gt;GEOS-10129&lt;/a&gt; Add language function for multilingual support in sld&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Improvements and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10205&quot;&gt;GEOS-10205&lt;/a&gt; Layer with i18n title might appear twice in the capabilities, while being contained in a named tree&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10204&quot;&gt;GEOS-10204&lt;/a&gt; Default locale is not being used while producing internationalized outputs in Capabilities document&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10160&quot;&gt;GEOS-10160&lt;/a&gt; Requested Language in GetCapabilities&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;modules-status-information-for-extensions&quot;&gt;Modules Status Information for Extensions&lt;/h2&gt;
+
+&lt;p&gt;Thanks to Ian for completing a [long outstanding request][https://osgeo-org.atlassian.net/browse/GEOS-10067] to provide listing everything you have installed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Server Status page now provides a complete list of the loaded modules and extensions&lt;/li&gt;
+  &lt;li&gt;This extension list can also be checked via REST API (allowing scripts to check if the functionality they require has been installed)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;New Feature:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10067&quot;&gt;GEOS-10067&lt;/a&gt; Implement module status in extensions (&lt;a href=&quot;https://github.com/bencaradocdavies/geoserver/wiki/GSIP-143&quot;&gt;GISP-143&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Improvements and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9967&quot;&gt;GEOS-9967&lt;/a&gt; Add Module Status implementation for CSW Extension&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;updates-and-quality-assurance&quot;&gt;Updates and quality assurance&lt;/h2&gt;
+
+&lt;p&gt;GeoServer continues to be build with the latest open source technologies:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GeoTools 26-RC&lt;/li&gt;
+  &lt;li&gt;GeoWebCache 1.20-RC&lt;/li&gt;
+  &lt;li&gt;JAI-EXT 1.1.20&lt;/li&gt;
+  &lt;li&gt;ImageIO-EXT 1.3.10&lt;/li&gt;
+  &lt;li&gt;JTS 1.18.2&lt;/li&gt;
+  &lt;li&gt;GeoFence 3.5.0&lt;/li&gt;
+  &lt;li&gt;Flatgeobuf to 3.10.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The team continues to work with automated code checks, gradually improving the codebase and introducing checks to ensure issues are not re-introduced over time:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Check system.out.println and printStackTrace statements are not accidentally committed, which can add to logs&lt;/li&gt;
+  &lt;li&gt;Cognitive complexity checks, start cleaning up methods that are too complex&lt;/li&gt;
+  &lt;li&gt;Use StandardCharsets when possible, rather than String&lt;/li&gt;
+  &lt;li&gt;Avoid unnecessary object wrapper creation&lt;/li&gt;
+  &lt;li&gt;Use short arrays initializers&lt;/li&gt;
+  &lt;li&gt;Work towards consistent style with checks to avoid C style array declarations, add missing @Override annotations, and check java generics are used&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This dedication helps provide confidence in the technology we publish.&lt;/p&gt;
+
+&lt;h3 id=&quot;wms&quot;&gt;WMS&lt;/h3&gt;
+
+&lt;p&gt;Fixes and improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-4939&quot;&gt;GEOS-4939&lt;/a&gt; Coordinate system ISSUE - S-JTSK Krovak East North (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EPSG: 5514&lt;/code&gt;) - cannot be set up&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10032&quot;&gt;GEOS-10032&lt;/a&gt; Group Layer in Catalog Mode Hide not in capabilities when unauthenticated&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10013&quot;&gt;GEOS-10013&lt;/a&gt; Mark invalid error while validating or saving a Style&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9907&quot;&gt;GEOS-9907&lt;/a&gt; Enable usage of labelPoint function in GetFeatureInfo requests&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9759&quot;&gt;GEOS-9759&lt;/a&gt; Set Response Cache Headers in LayerGroups&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following functionality has been removed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10001&quot;&gt;GEOS-10001&lt;/a&gt; Remove animator and animated GIF support from WMS&lt;/p&gt;
+
+    &lt;p&gt;Use of WPS Animation process is provided as an alternative&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wfs&quot;&gt;WFS&lt;/h2&gt;
+
+&lt;p&gt;Fixes and improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10222&quot;&gt;GEOS-10222&lt;/a&gt; WFS CSV OutputFormat delimiter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wps&quot;&gt;WPS&lt;/h2&gt;
+
+&lt;p&gt;Fixes and improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9990&quot;&gt;GEOS-9990&lt;/a&gt; Add GUI and REST API to configure the wps-download module&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10073&quot;&gt;GEOS-10073&lt;/a&gt; WPS animation download process should report about eventual time mis-matches&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wmts&quot;&gt;WMTS&lt;/h2&gt;
+
+&lt;p&gt;Improvements and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10008&quot;&gt;GEOS-10008&lt;/a&gt; Have GeoServerTileLayer implementing TileJSONProvider&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9971&quot;&gt;GEOS-9971&lt;/a&gt; GeoWebCache S3 plugin require AWS creds&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;inspire-extension&quot;&gt;INSPIRE Extension&lt;/h2&gt;
+
+&lt;p&gt;New feature:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10124&quot;&gt;GEOS-10124&lt;/a&gt; Add Language support to INSPIRE extension&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Improvements and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10211&quot;&gt;GEOS-10211&lt;/a&gt; Unable to pass INSPIRE validation: Version is mandatory (WMS)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10192&quot;&gt;GEOS-10192&lt;/a&gt; Inspire extension consistent outputResponse element&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10141&quot;&gt;GEOS-10141&lt;/a&gt; Inspire extension better error message on language not found&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10163&quot;&gt;GEOS-10163&lt;/a&gt; Incorrect INSPIRE namespace URI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;and-more&quot;&gt;And more!&lt;/h2&gt;
+
+&lt;p&gt;Fixes and Improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10092&quot;&gt;GEOS-10092&lt;/a&gt; Fix the page description of remote WMS/WMTS connection&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10189&quot;&gt;GEOS-10189&lt;/a&gt; I18n improvement using the UTF-8 charset for Chinese translations&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10033&quot;&gt;GEOS-10033&lt;/a&gt; Geoserver startup and shutdown shell scripts don’t handle path with spaces&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9381&quot;&gt;GEOS-9381&lt;/a&gt; Conversion from boolean true/false in geoserver to SQL Server bit 0/1, is broken&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9970&quot;&gt;GEOS-9970&lt;/a&gt; MapML GetFeature bug fix for CRS authority&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10201&quot;&gt;GEOS-10201&lt;/a&gt; Geoserver fails to start on Windows 11 beta&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Find out more in the &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16815&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-geoserver-220&quot;&gt;About GeoServer 2.20&lt;/h2&gt;
+
+&lt;p&gt;Additional information on GeoServer 2.20 series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.geoserver.org/latest/en/user/services/internationalization/index.html&quot;&gt;Internationalization of title and abstract&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Release notes (&lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16815&quot;&gt;2.20-RC&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jody Garnett</name></author><category term="Announcements" /><category term="Release Candidate" /><summary type="html">We are happy to announce GeoServer 2.20-RC release candidate is available for testing. Downloads are available (zip and war) along with docs and extensions.</summary></entry><entry><title type="html">GeoServer 2.18.5 Released</title><link href="/announcements/2021/08/20/geoserver-2-18-5-released.html" rel="alternate" type="text/html" title="GeoServer 2.18.5 Released" /><published>2021-08-20T00:00:00+00:00</published><updated>2021-08-20T00:00:00+00:00</updated><id>/announcements/2021/08/20/geoserver-2-18-5-released</id><content type="html" xml:base="/announcements/2021/08/20/geoserver-2-18-5-released.html">&lt;p&gt;We are happy to announce GeoServer &lt;a href=&quot;/release/2.18.5/&quot;&gt;2.18.5&lt;/a&gt; release is available for download  (&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.5/geoserver-2.18.5-bin.zip/download&quot;&gt;zip&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.5/geoserver-2.18.5-war.zip/download&quot;&gt;war&lt;/a&gt;) along with &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.5/geoserver-2.18.5-htmldoc.zip/download&quot;&gt;docs&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.5/extensions/&quot;&gt;extensions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This GeoServer 2.18.5 release was produced in conjunction with GeoTools 24.5 and GeoWebCache 1.18.4. This is a maintenance release recommended for production systems. It is also the last release of the 2.18.x series, users are warmly recommendeded to upgrade to 2.19.x, or upgrade to 2.20.0 as it gets released next month, September 2021.&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone who contributed, and to Alessandro Parma (GeoSolutions) and Andrea Aime (GeoSolutions) for making this release.&lt;/p&gt;
+
+&lt;h2 id=&quot;improvements-and-fixes&quot;&gt;Improvements and Fixes&lt;/h2&gt;
+
+&lt;p&gt;This release improves the importer module logging, as well as the documentation on how to enable and use catalog parametrization:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10194&quot;&gt;GEOS-10194&lt;/a&gt; Improve importer LOGGING&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10149&quot;&gt;GEOS-10149&lt;/a&gt; Improve Catalog Parametrization documentation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Fixes included in the release&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10173&quot;&gt;GEOS-10173&lt;/a&gt; CoverageViewReader’s format not being secured with Geofence-Geoserver&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10162&quot;&gt;GEOS-10162&lt;/a&gt; GeoServerOAuthAuthenticationFilter creates Anonymous authentication when preAuthenticated principal is not present&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10193&quot;&gt;GEOS-10193&lt;/a&gt; Indirect imports will drop the target table if there is any failure during the import process&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For details check the &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16822&quot;&gt;2.18.5&lt;/a&gt; release notes.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-geoserver-218&quot;&gt;About GeoServer 2.18&lt;/h2&gt;
+
+&lt;p&gt;Additional information on GeoServer 2.18 series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;State of GeoServer 2.18 (&lt;a href=&quot;https://docs.google.com/presentation/d/1Q0pHRUcvucAuHDeZPoeDJG4UY5izwbqo8ZawUdk9xYM/edit?usp=sharing&quot;&gt;slides&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;GeoServer Orientation
+  (&lt;a href=&quot;https://t.co/fvBTLMia6f?amp=1&quot;&gt;slides&lt;/a&gt;|&lt;a href=&quot;https://youtu.be/bdkk5eVR674&quot;&gt;video&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Release Notes
+   (&lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16822&quot;&gt;2.18.5&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16819&quot;&gt;2.18.4&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16808&quot;&gt;2.18.3&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16803&quot;&gt;2.18.2&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16800&quot;&gt;2.18.1&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16796&quot;&gt;2.18.0&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16783&quot;&gt;2.18-RC&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Andrea Aime</name></author><category term="Announcements" /><category term="Release" /><summary type="html">We are happy to announce GeoServer 2.18.5 release is available for download (zip and war) along with docs and extensions.</summary></entry><entry><title type="html">GeoServer 2.19.2 Released</title><link href="/announcements/2021/07/18/geoserver-2-19-2-released.html" rel="alternate" type="text/html" title="GeoServer 2.19.2 Released" /><published>2021-07-18T00:00:00+00:00</published><updated>2021-07-18T00:00:00+00:00</updated><id>/announcements/2021/07/18/geoserver-2-19-2-released</id><content type="html" xml:base="/announcements/2021/07/18/geoserver-2-19-2-released.html">&lt;p&gt;We are happy to announce GeoServer &lt;a href=&quot;/release/2.19.2/&quot;&gt;2.19.2&lt;/a&gt; release is available for download  (&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.2/geoserver-2.19.2-bin.zip/download&quot;&gt;zip&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.2/geoserver-2.19.2-war.zip/download&quot;&gt;war&lt;/a&gt;) along with &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.2/geoserver-2.19.2-htmldoc.zip/download&quot;&gt;docs&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.2/extensions/&quot;&gt;extensions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This GeoServer 2.19.2 release was produced in conjunction with GeoTools 25.2, this is a stable release recommended for production systems.&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone who contributed, and to Jody Garnett (GeoCat) for making this release.&lt;/p&gt;
+
+&lt;h2 id=&quot;improvements-and-fixes&quot;&gt;Improvements and Fixes&lt;/h2&gt;
+
+&lt;p&gt;New features are included in this release:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-5239&quot;&gt;GEOS-5239&lt;/a&gt; Implement (Krovak) North Orientated projection&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Notable improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10149&quot;&gt;GEOS-10149&lt;/a&gt; Improve Catalog Parametrization documentation&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10098&quot;&gt;GEOS-10098&lt;/a&gt; Upgrade version of wicket and jquery used by GeoServer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10064&quot;&gt;GEOS-10064&lt;/a&gt; Improving WPS Raster Download - download time&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10009&quot;&gt;GEOS-10009&lt;/a&gt; Improve logging on lock providers&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Fixes included in this release:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10114&quot;&gt;GEOS-10114&lt;/a&gt; Geofence server UI, error when changing the layerType from layer details tab.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10113&quot;&gt;GEOS-10113&lt;/a&gt; Geofence REST NPE when requesting rule with void Layer details&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10037&quot;&gt;GEOS-10037&lt;/a&gt; WMTS Multidimensional extension make layers encoding fail on TileLayers not being GeoServerTileLayers&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9804&quot;&gt;GEOS-9804&lt;/a&gt; The default style of the layergroup is propagated in the layer as default style&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For details check the &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16821&quot;&gt;2.19.2&lt;/a&gt; release notes.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-geoserver-219&quot;&gt;About GeoServer 2.19&lt;/h2&gt;
+
+&lt;p&gt;Additional information on GeoServer 2.19 series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://docs.geoserver.org/stable/en/user/tutorials/GetFeatureInfo/raster.html&quot;&gt;WMS GetFeatureInfo includes labels from ColorMap &lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-196&quot;&gt;Promote WMTS multidim to extension&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-195&quot;&gt;Promote WPS-Download to extension&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-194&quot;&gt;Promote params-extractor to extension&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-193&quot;&gt;Promote GWC-S3 to extension&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-197&quot;&gt;Promote WPS-JDBC to extension status&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-200&quot;&gt;Promote MapML to extension status&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;main-branch.html&quot;&gt;GeoServer repository transition to main branch&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Release notes ( &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16821&quot;&gt;2.19.2&lt;/a&gt;| &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16816&quot;&gt;2.19.1&lt;/a&gt; | &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16814&quot;&gt;2.19.0&lt;/a&gt; | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16766&quot;&gt;2.19-RC&lt;/a&gt; )&lt;/p&gt;</content><author><name>Jody Garnett</name></author><category term="Announcements" /><category term="Release" /><summary type="html">We are happy to announce GeoServer 2.19.2 release is available for download (zip and war) along with docs and extensions.</summary></entry><entry><title type="html">GeoServer 2.18.4 Released</title><link href="/announcements/2021/06/23/geoserver-2-18-4-released.html" rel="alternate" type="text/html" title="GeoServer 2.18.4 Released" /><published>2021-06-23T00:00:00+00:00</published><updated>2021-06-23T00:00:00+00:00</updated><id>/announcements/2021/06/23/geoserver-2-18-4-released</id><content type="html" xml:base="/announcements/2021/06/23/geoserver-2-18-4-released.html">&lt;p&gt;We are happy to announce GeoServer &lt;a href=&quot;/release/2.18.4/&quot;&gt;2.18.4&lt;/a&gt; release is available for download  (&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.4/geoserver-2.18.4-bin.zip/download&quot;&gt;zip&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.4/geoserver-2.18.4-war.zip/download&quot;&gt;war&lt;/a&gt;) along with &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.4/geoserver-2.18.4-htmldoc.zip/download&quot;&gt;docs&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.4/extensions/&quot;&gt;extensions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This GeoServer 2.18.4 release was produced in conjunction with GeoTools 24.4 and GeoWebCache 1.18.4. This is a maintenance release recommended for production systems.&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone who contributed, and to Alessandro Parma (GeoSolutions) and Andrea Aime (GeoSolutions) for making this release.&lt;/p&gt;
+
+&lt;h2 id=&quot;improvements-and-fixes&quot;&gt;Improvements and Fixes&lt;/h2&gt;
+
+&lt;p&gt;This release includes support for the Krovak North Orientated projection. In addition to this new features, a few notable improvements are included:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10098&quot;&gt;Upgrade version of wicket and jquery used by GeoServer&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;SLDService can now &lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10030&quot;&gt;limit max unique values&lt;/a&gt; for uniqueInterval classification vector data (to avoid generating too many rules).&lt;/li&gt;
+  &lt;li&gt;Better logging in lock management and parameters extractor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Fixes included in this release:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10057&quot;&gt;GEOS-10057&lt;/a&gt; Escape style editor page user input&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10056&quot;&gt;GEOS-10056&lt;/a&gt; Rename schemaless-mongo plug-in to mongodb-schemaless&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10055&quot;&gt;GEOS-10055&lt;/a&gt; Escape SRS demo page user input&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10051&quot;&gt;GEOS-10051&lt;/a&gt; Fix edge cases in the elevation parser&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10049&quot;&gt;GEOS-10049&lt;/a&gt; Schemaless-features layer with name different from the mongo collection throws exception&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10048&quot;&gt;GEOS-10048&lt;/a&gt; Schemaless-features mongoDB layer not present in WMS capabilities&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-10031&quot;&gt;GEOS-10031&lt;/a&gt; GWC loses GridSets bounds when importing data through the Importer plugin.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://osgeo-org.atlassian.net/browse/GEOS-9748&quot;&gt;GEOS-9748&lt;/a&gt; Rendering process fails if vendor option sortByGroup is used&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For details check the &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16819&quot;&gt;2.18.4&lt;/a&gt; release notes.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-geoserver-218&quot;&gt;About GeoServer 2.18&lt;/h2&gt;
+
+&lt;p&gt;Additional information on GeoServer 2.18 series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;State of GeoServer 2.18 (&lt;a href=&quot;https://docs.google.com/presentation/d/1Q0pHRUcvucAuHDeZPoeDJG4UY5izwbqo8ZawUdk9xYM/edit?usp=sharing&quot;&gt;slides&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;GeoServer Orientation
+  (&lt;a href=&quot;https://t.co/fvBTLMia6f?amp=1&quot;&gt;slides&lt;/a&gt;|&lt;a href=&quot;https://youtu.be/bdkk5eVR674&quot;&gt;video&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Release Notes
+  ( &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16819&quot;&gt;2.18.4&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16808&quot;&gt;2.18.3&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16803&quot;&gt;2.18.2&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16800&quot;&gt;2.18.1&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16796&quot;&gt;2.18.0&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16783&quot;&gt;2.18-RC&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Andrea Aime</name></author><category term="Announcements" /><category term="Release" /><summary type="html">We are happy to announce GeoServer 2.18.4 release is available for download (zip and war) along with docs and extensions.</summary></entry><entry><title type="html">GeoServer 2.19.1 Released</title><link href="/announcements/2021/05/24/geoserver-2-19-1-released.html" rel="alternate" type="text/html" title="GeoServer 2.19.1 Released" /><published>2021-05-24T00:00:00+00:00</published><updated>2021-05-24T00:00:00+00:00</updated><id>/announcements/2021/05/24/geoserver-2-19-1-released</id><content type="html" xml:base="/announcements/2021/05/24/geoserver-2-19-1-released.html">&lt;p&gt;We are happy to announce GeoServer &lt;a href=&quot;/release/2.19.1/&quot;&gt;2.19.1&lt;/a&gt; release is available for download  (&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.1/geoserver-2.19.1-bin.zip/download&quot;&gt;zip&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.1/geoserver-2.19.1-war.zip/download&quot;&gt;war&lt;/a&gt;) along with &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.1/geoserver-2.19.1-htmldoc.zip/download&quot;&gt;docs&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.1/extensions/&quot;&gt;extensions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This GeoServer 2.19.1 release was produced in conjunction with GeoTools 25.1 and GeoWebCache 1.19.1. this is a stable release recommended for production systems.&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone who contributed, and to Jody Garnett (GeoCat) for making this release.&lt;/p&gt;
+
+&lt;h2 id=&quot;improvements-and-fixes&quot;&gt;Improvements and Fixes&lt;/h2&gt;
+
+&lt;p&gt;Several new features are included in this release:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GetFeatureInfo can now includes ColorMap labels for the location clicked, check out the &lt;a href=&quot;https://docs.geoserver.org/stable/en/user/tutorials/GetFeatureInfo/raster.html&quot;&gt;tutorial&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;A new styling vendor option &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inclusion&lt;/code&gt; to &lt;a href=&quot;https://docs.geoserver.org/stable/en/user/styling/sld/extensions/rendering-selection.html&quot;&gt;control control legend generation&lt;/a&gt; for WMS GetLegendGraphic using values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;legendOnly&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mapOnly&lt;/code&gt;, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;normal&lt;/code&gt; to define how a style element is used.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Notable improvements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Improve parameter extractor logging&lt;/li&gt;
+  &lt;li&gt;Customization of complex GeoJSON WFS output is now available for other data stores, previously this was restricted attributes marked &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@dataType&lt;/code&gt; by the AppSchema plugin.&lt;/li&gt;
+  &lt;li&gt;SLD Service now places a limit, configured by system variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Dorg.geoserver.sldService.maxUniqueRange=1024&lt;/code&gt;, of the number of unique intervals.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Fixes included in this release:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fix elevation key-value-pair parser (used in WMS GetMap) handling of edge cases such as zero intervals&lt;/li&gt;
+  &lt;li&gt;Fix importer application of gridset bounds, (ot was not working correctly when GWC DiskQuote in use)&lt;/li&gt;
+  &lt;li&gt;Inspire schemas URL updated to their new HTTPS location&lt;/li&gt;
+  &lt;li&gt;WCS 2.0 slicing on lat/long fix, was sometimes returning adjacent pixel&lt;/li&gt;
+  &lt;li&gt;WMS Layers with dimensions were missing from GetCapabilities when using catalog security challenge mode.&lt;/li&gt;
+  &lt;li&gt;App Schema download was missing a required jar.&lt;/li&gt;
+  &lt;li&gt;Improvements helping coverage format compatibility with file references&lt;/li&gt;
+  &lt;li&gt;Address GeoFence interaction with non global named tree container&lt;/li&gt;
+  &lt;li&gt;Address WPS Download animation out of memory issues&lt;/li&gt;
+  &lt;li&gt;Address rendering process regression with use of vendor option &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sortByGroup&lt;/code&gt; resulting in “internal error rendering process failed”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Internal:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Upgrade to commons-io 2.8.0&lt;/li&gt;
+  &lt;li&gt;Autoformat maven &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pom.xml&lt;/code&gt; files&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For details check the &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16816&quot;&gt;2.19.1&lt;/a&gt; release notes.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-geoserver-219&quot;&gt;About GeoServer 2.19&lt;/h2&gt;
+
+&lt;p&gt;Additional information on GeoServer 2.19 series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://docs.geoserver.org/stable/en/user/tutorials/GetFeatureInfo/raster.html&quot;&gt;WMS GetFeatureInfo includes labels from ColorMap &lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-196&quot;&gt;Promote WMTS multidim to extension&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-195&quot;&gt;Promote WPS-Download to extension&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-194&quot;&gt;Promote params-extractor to extension&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-193&quot;&gt;Promote GWC-S3 to extension&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-197&quot;&gt;Promote WPS-JDBC to extension status&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-200&quot;&gt;Promote MapML to extension status&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;main-branch.html&quot;&gt;GeoServer repository transition to main branch&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Release notes ( &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16816&quot;&gt;2.19.1&lt;/a&gt; | &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16814&quot;&gt;2.19.0&lt;/a&gt; | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16766&quot;&gt;2.19-RC&lt;/a&gt; )&lt;/p&gt;</content><author><name>Jody Garnett</name></author><category term="Announcements" /><category term="Release" /><summary type="html">We are happy to announce GeoServer 2.19.1 release is available for download (zip and war) along with docs and extensions.</summary></entry><entry><title type="html">GeoServer 2.18.3 Released</title><link href="/announcements/2021/04/23/geoserver-2.18.3-released.html" rel="alternate" type="text/html" title="GeoServer 2.18.3 Released" /><published>2021-04-23T00:00:00+00:00</published><updated>2021-04-23T00:00:00+00:00</updated><id>/announcements/2021/04/23/geoserver-2.18.3-released</id><content type="html" xml:base="/announcements/2021/04/23/geoserver-2.18.3-released.html">&lt;p&gt;We are pleased to announce the release of GeoServer &lt;a href=&quot;http://geoserver.org/release/2.18.3/&quot;&gt;2.18.3&lt;/a&gt; with downloads (
+&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.3/geoserver-2.18.3-war.zip/download&quot;&gt;war&lt;/a&gt; |
+&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.3/geoserver-2.18.3-bin.zip/download&quot;&gt;bin&lt;/a&gt; ),
+&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.3/geoserver-2.18.3-htmldoc.zip/download&quot;&gt;documentation&lt;/a&gt; and
+&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.18.3/extensions/&quot;&gt;extensions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This release is made in conjunction with GeoTools 24.3 and GeoWebCache 1.18.3. This is a maintenance release recommended for production systems.&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone who contributed, and Ian Turton (Astun) and Jody Garnet (GeoCat) for making this release.&lt;/p&gt;
+
+&lt;h3 id=&quot;improvements-and-fixes&quot;&gt;Improvements and Fixes&lt;/h3&gt;
+
+&lt;p&gt;This release includes a number of enhancements and fixes in core and extensions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add LayerGroup support to Geofence,&lt;/li&gt;
+  &lt;li&gt;ColorMap labels in raster layer GetFeatureInfo response&lt;/li&gt;
+  &lt;li&gt;New web-service-auth community module&lt;/li&gt;
+  &lt;li&gt;Add GeoServer environment parametrization support to Base Proxy configuration&lt;/li&gt;
+  &lt;li&gt;Include layer name(s) in WMS ServiceException for GetMap&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more information check the &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16808&quot;&gt;2.18.3&lt;/a&gt; release notes.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-geoserver-218&quot;&gt;About GeoServer 2.18&lt;/h2&gt;
+
+&lt;p&gt;Additional information on GeoServer 2.18 series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;State of GeoServer 2.18 (&lt;a href=&quot;https://docs.google.com/presentation/d/1Q0pHRUcvucAuHDeZPoeDJG4UY5izwbqo8ZawUdk9xYM/edit?usp=sharing&quot;&gt;slides&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;GeoServer Orientation
+  (&lt;a href=&quot;https://t.co/fvBTLMia6f?amp=1&quot;&gt;slides&lt;/a&gt;|&lt;a href=&quot;https://youtu.be/bdkk5eVR674&quot;&gt;video&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Release Notes
+  ( &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16808&quot;&gt;2.18.3&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16803&quot;&gt;2.18.2&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16800&quot;&gt;2.18.1&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16796&quot;&gt;2.18.0&lt;/a&gt;
+  | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16783&quot;&gt;2.18-RC&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Ian Turton</name></author><category term="Announcements" /><category term="Release" /><summary type="html">We are pleased to announce the release of GeoServer 2.18.3 with downloads ( war | bin ), documentation and extensions.</summary></entry><entry><title type="html">GeoServer 2.19.0 Released</title><link href="/announcements/2021/03/22/geoserver-2-19-0-released.html" rel="alternate" type="text/html" title="GeoServer 2.19.0 Released" /><published>2021-03-22T00:00:00+00:00</published><updated>2021-03-22T00:00:00+00:00</updated><id>/announcements/2021/03/22/geoserver-2-19-0-released</id><content type="html" xml:base="/announcements/2021/03/22/geoserver-2-19-0-released.html">&lt;p&gt;We are happy to announce GeoServer &lt;a href=&quot;/release/2.19.0/&quot;&gt;2.19.0&lt;/a&gt; release is available for download  (&lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/geoserver-2.19.0-bin.zip/download&quot;&gt;zip&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/geoserver-2.19.0-war.zip/download&quot;&gt;war&lt;/a&gt;) along with &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/geoserver-2.19.0-htmldoc.zip/download&quot;&gt;docs&lt;/a&gt; and &lt;a href=&quot;https://sourceforge.net/projects/geoserver/files/GeoServer/2.19.0/extensions/&quot;&gt;extensions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This GeoServer 2.19.0 release was produced in conjunction with GeoTools 25.0 and GeoWebCache 1.19.0.&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone who contributed and helped test this release. Developer adding new features are credited in the sections below. Release candidate testing was performed by Andrea Aime, Bart Verbeeck, Christoforos Vradis, Georg Weickelt, Graham Humphries, Ian Turton, Jody Garnett, Peter Rushforth, Richard Duivenvoorde, Russell Grew, and Simone Giannecchini. With all the new extensions being added we appreciated those testing the release candidate packaging.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Alessandro Parma (GeoSolutions) and Andrea Aime (GeoSolutions) for making this release.&lt;/p&gt;
+
+&lt;h2 id=&quot;mapml-extension&quot;&gt;MapML extension&lt;/h2&gt;
+
+&lt;p&gt;In this release, MapML has graduated from community module to extension status. 
+Map Markup Language (MapML) is a proposed extension to HTML, for maps. 
+The objective of the project is to standardize accessible, performant Web maps 
+with native support from Web browsers (maps in HTML). The GeoServer MapML extension 
+will closely track the MapML specification as it evolves. Find out more at 
+https://maps4html.org/, and if you like our goals, join the community group!&lt;/p&gt;
+
+&lt;p&gt;The MapML extension works with GeoServer layers and layer groups, and uses WMS,
+WMTS and WFS facilities built into GeoServer to provide simple map previews layers.
+The layer previews can be “dragged” from one browser tab onto another map preview to
+visualize a mashup of the layers of layer groups using the built in MapML viewer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/mapml-layers-panel.png&quot; alt=&quot;MapML Layer properties panel&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Editing a layer’s MapML properties in the Layers panel&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/mapml-gridsets.png&quot; alt=&quot;MapML gridsets in the Layers Tile Caching tab&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Editing a layer’s MapML gridsets in the Layers panel Tile Caching tab&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/mapml-layer-preview-list.png&quot; alt=&quot;MapML Preview link is added to the Layer Preview page&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Preview a layer in the MapML viewer by following the MapML link&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/mapml-preview-mashup.png&quot; alt=&quot;MapML previews can be mashed up by dragging the URL of one preview onto another&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Mash up MapML previews by drag and drop&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Maps for HTML community would like to thank Andrea Aime, Jody Garnett and the 
+GeoServer PSC for their support and help in getting this extension published.&lt;/p&gt;
+
+&lt;p&gt;More information on the GeoServer MapML extension is available in the 
+&lt;a href=&quot;https://docs.geoserver.org/latest/en/user/extensions/mapml/index.html&quot;&gt;user guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;wps-jdbc-extension&quot;&gt;WPS JDBC extension&lt;/h2&gt;
+
+&lt;p&gt;The WPS JDBC extension allows to share the status of asynchronous WPS requests across a GeoServer cluster. The status of 
+all requests, past and ongoing, can be stored in a database, for later reference.&lt;/p&gt;
+
+&lt;p&gt;The module uses GeoTools JDBC stores to access databases, create the necessary tables, and track status. 
+Connection parameters are provided as property files, e.g.:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user=postgres
+port=5432
+password=******
+passwd=******
+host=localhost
+database=gsstore
+driver=org.postgresql.Driver
+dbtype=postgis
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For more information, refer to the &lt;a href=&quot;https://docs.geoserver.org/latest/en/user/extensions/wps-jdbc/index.html&quot;&gt;module documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We’d like to thank Ian Turton for developing the module on behalf of GeoSolutions, Alessio Fabiani (GeoSolutions) for providing
+documentation for it, and Andrea Aime (GeoSolutions) for performing the QA and graduation steps.&lt;/p&gt;
+
+&lt;h2 id=&quot;wps-download-extension&quot;&gt;WPS Download extension&lt;/h2&gt;
+
+&lt;p&gt;The WPS download plugin provides support for the download of large amounts of data,
+allowing use of asynchronous requests, where using WFS, WCS or WMS for the same task would lead to HTTP timeouts.
+Also, download limits can be configured to avoid excessively large requests: size in MB, number of features, number
+of animation frames.&lt;/p&gt;
+
+&lt;p&gt;In particular, the following processes are available:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DownloadEstimator&lt;/code&gt;, verifying that a raster/vector download about to be attempted will fit the download limits.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DownloadProcess&lt;/code&gt;, allowing to download either raster or vector data, reproject and clip them&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DownloadMapProcess&lt;/code&gt;, allows to download a large map matching what is visible on a client (which may be using tiles and display on a multi-screen), eventually dynamically fetching layers from remote WMS servers as well. It’s also possible to decorate the final map using the standard &lt;a href=&quot;https://docs.geoserver.org/latest/en/user/services/wms/decoration.html#wms-decorations&quot;&gt;decoration layouts&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DownloadAnimationProcess&lt;/code&gt;, allows to build a MP4 movie given a set of layers and times.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;GeoNode uses the module to allow download of datasets, eventually clipped and filtered to the current view. The asynchronous download allows
+to download large datasets, and retrieve them later, once ready.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/geonode_download_1.png&quot; alt=&quot;GeoNode download&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Initiating a download in GeoNode&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/geonode_download_2.png&quot; alt=&quot;GeoNode download&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Configuring the download&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/geonode_download_3.png&quot; alt=&quot;GeoNode download&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;The download package is ready&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/geonode_download_4.png&quot; alt=&quot;GeoNode download&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Viewing the clipped download in QGIS&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For more information, refer to the &lt;a href=&quot;https://docs.geoserver.org/latest/en/user/extensions/wps-download/index.html&quot;&gt;module documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Alessio, Andrea, Daniele, from GeoSolutions, for developing the extension, and GeoNode/MapStore for testing it in various production environments.&lt;/p&gt;
+
+&lt;h2 id=&quot;wmts-multidimensional-extension&quot;&gt;WMTS Multidimensional extension&lt;/h2&gt;
+
+&lt;p&gt;The WMTS multi-dimensional extension is an extension to the WMTS protocol developed during OGC Testbed 12. The extension allows to explore 
+the dimensions attached to a dataset, providing ways to explore them, finding relationships between them.&lt;/p&gt;
+
+&lt;p&gt;Here are a couple of real world examples of this functionality:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GeoServer is publishing a set of satellite images. Each image is time stamped. The user is browsing the set of data on a map, and the client software wants to show the list of available times for the current area. The WMS/WMTS dimension support cannot help, but the WMTS extension has a request,  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GetDomainValues&lt;/code&gt;, which exactly answers this question.&lt;/li&gt;
+  &lt;li&gt;GeoServer is publishing a set of NetCDFs containing weather forecasts. Each dataset has two times associated, a run time (the time the forecast was run) and a time (the predicted time for the weather data). Forecasts are run for the short term future, so the two times are strictly related. A user wants to compare forecasts for a given predicted time. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GetDomainValues&lt;/code&gt;  request can be used to locate the run times that have a prediction for the given forecast time.&lt;/li&gt;
+  &lt;li&gt;GeoServer is publishing a set of timestamped data. The client wants to display a timeline, providing an idea of which times are available for the current view. In addition to that, the clients wants to display how many datasets are available along the timeline. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GetHistogram&lt;/code&gt; request can be used to retrieve a count of datasets available over time buckets in a given interval.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://mapstore.readthedocs.io/en/latest/&quot;&gt;MapStore client&lt;/a&gt; uses the module to power its &lt;a href=&quot;https://mapstore.readthedocs.io/en/v2019.02.00/user-guide/timeline/&quot;&gt;timeline extension&lt;/a&gt;, providing time discovery, navigation, animation, and histogram display.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/timeline-base.jpg&quot; alt=&quot;MapStore timeline plugin, with animation controls&quot; title=&quot;MapStore timeline plugin, with animation controls&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;MapStore timeline plugin, with animation controls&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/timeline-histogram.jpg&quot; alt=&quot;MapStore timeline plugin, histogram view&quot; title=&quot;MapStore timeline plugin, histogram view&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;MapStore timeline plugin, histogram view&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The plugin partially replaces the &lt;a href=&quot;https://docs.geoserver.org/latest/en/user/tutorials/animreflector.html&quot;&gt;WMS animator&lt;/a&gt; functionality, which is going to be deprecated (since it’s memory bound, and can only be accessed
+with a synchronous request).&lt;/p&gt;
+
+&lt;p&gt;For more information, refer to the &lt;a href=&quot;https://docs.geoserver.org/latest/en/user/extensions/wmts-multidimensional/index.html&quot;&gt;module documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Nuno Oliveira (GeoSolutions) and Andrea Aime (GeoSolutions) for the initial development, and MapStore for adopting the module, using it in production, and ensuring its long term development&lt;/p&gt;
+
+&lt;h2 id=&quot;params-extractor-extension&quot;&gt;Params-extractor extension&lt;/h2&gt;
+
+&lt;p&gt;The parameter extractor module is used to inject vendor parameters in all links that a standard OGC client uses, by either
+reflecting them into the Capabilities documents backlinks, or hiding them in an extra component in the URLs paths.&lt;/p&gt;
+
+&lt;p&gt;This can be used, for example, to provide a desktop client, such as QGIS, a different view of a given layer based on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewparams&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cql_filter&lt;/code&gt;
+or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;env&lt;/code&gt; parameters, even if the client would not be able to use the parameters natively.
+Each combination of parameters receives a different starting GetCapabilities request.&lt;/p&gt;
+
+&lt;p&gt;A simple query parameter echoing can be setup for clients honoring query parameters in capabilities backlinks:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/param_extract_echo.png&quot; alt=&quot;Parameter echoing&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Parameter extractor echoing&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For clients ignoring query parameters or even ignoring backlinks, the parameters can be added as a path component instead, and then expanded in a larger templated value:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/param_extract_expand.png&quot; alt=&quot;Parameter extraction&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Parameter expansion from path component&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;With the above setup, a URL ending with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;H11&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
+/geoserver/tiger/wms/H11?SERVICE=WMS&amp;amp;VERSION=1.1.1&amp;amp;REQUEST=GetMap
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;is interpreted as:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
+/geoserver/tiger/wms?SERVICE=WMS&amp;amp;VERSION=1.1.1&amp;amp;REQUEST=GetMap&amp;amp;CQL_FILTER=CFCC%3D%27H11%27
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;For more information, refer to the &lt;a href=&quot;https://docs.geoserver.org/stable/en/user/extensions/params-extractor/index.html&quot;&gt;module documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Nuno Oliveira (GeoSolutions) for developing this module.&lt;/p&gt;
+
+&lt;h2 id=&quot;geowebcache-s3-extension&quot;&gt;GeoWebCache-S3 extension&lt;/h2&gt;
+
+&lt;p&gt;The GeoWebCache S3 blobstore allows storage of GeoWebCache tiles in a S3 bucket. It has been also tested with a few other S3 compatible blob 
+storage mechanisms, such as &lt;a href=&quot;https://min.io/&quot;&gt;Minio&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This plugin is particularly useful when deploying GeoServer on AWS, but also when setting up a shared tile storage in Kubernetes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2.19-RC/gwc_s3.png&quot; alt=&quot;Parameter extraction&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Setting up the S3 tile storage&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For more information, refer to the &lt;a href=&quot;https://docs.geoserver.org/latest/en/user/extensions/gwc-s3/index.html&quot;&gt;module documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;retire-arcsde-extensions&quot;&gt;Retire ArcSDE Extensions&lt;/h2&gt;
+
+&lt;p&gt;The ArcSDE Extension has been retired.&lt;/p&gt;
+
+&lt;p&gt;In this case we found that the extension is no longer actively used, and lacked sufficient feedback and resources for continued development. The last tested ArcSDE 10.2.2 version is no longer available, making the required jars required for installation unavailable.&lt;/p&gt;
+
+&lt;h2 id=&quot;retire-the-script-community-module&quot;&gt;Retire the Script community module&lt;/h2&gt;
+
+&lt;p&gt;The Script community module has been retired.&lt;/p&gt;
+
+&lt;p&gt;The module provided scripting abilities for GeoServer, allowing to add WPS processes and small REST services in scripting languages, 
+and storing them in the data directory.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately the module fell un-maintained and would no longer build nor work.&lt;/p&gt;
+
+&lt;h2 id=&quot;jts-1181&quot;&gt;JTS 1.18.1&lt;/h2&gt;
+
+&lt;p&gt;GeoServer 2.19.0 includes the latest JTS Topology Suite 1.18.1 release, the headline feature is an optional “Overlay Next Generation” implementation that should provide a performance improvement for operations such as tile generation, vector tiles, and get map requests.&lt;/p&gt;
+
+&lt;p&gt;To try it out use the system property &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Djts.overlay=ng&lt;/code&gt; - the effect should be small as we already have several optimizations in place before trying this now faster JTS Overlay.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Martin Davis (Crunch Data) and James Hughes (CCRi) for making &lt;a href=&quot;https://github.com/locationtech/jts/releases/tag/jts-1.18.1&quot;&gt;JTS 1.18.1&lt;/a&gt; available  during our release window.&lt;/p&gt;
+
+&lt;h2 id=&quot;codebase-updates-and-quality-assurance&quot;&gt;Codebase updates and Quality Assurance&lt;/h2&gt;
+
+&lt;p&gt;GeoServer continues to be build with the latest open source technologies:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GeoTools 25.0&lt;/li&gt;
+  &lt;li&gt;GeoWebCache 1.19.0&lt;/li&gt;
+  &lt;li&gt;JTS 1.18.1&lt;/li&gt;
+  &lt;li&gt;JAI-EXT 1.1.19&lt;/li&gt;
+  &lt;li&gt;GeoFence 3.4.7&lt;/li&gt;
+  &lt;li&gt;Upgrade oshi-core from 5.4.0 to 5.5.0 for new Apple hardware support&lt;/li&gt;
+  &lt;li&gt;Freemarker 2.3.31&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We do not get a chance to talk about the code-base that makes up GeoServer often, but recent changes and improvements deserve some praise. The GeoServer team has really embraced automating code checks, starting with simply formatting the code in a consistent fashion, to more advanced techniques checking for common mistakes.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Switch most of the unit tests from JUnit 3 to JUnit 4&lt;/li&gt;
+  &lt;li&gt;Remove usage of Vector/Hashtable, replace with ArrayList and HashMap, add PMD rule to enforce it&lt;/li&gt;
+  &lt;li&gt;Remove un-necessary casts from code, add PMD rule to enforce it&lt;/li&gt;
+  &lt;li&gt;Replace try/finally with try-with-resources, add a PMD rule to enforce it&lt;/li&gt;
+  &lt;li&gt;Collapse catch statements with the same body in a multi-catch, add PMD rule to enforce it&lt;/li&gt;
+  &lt;li&gt;Avoid assertTrue for tests that can be expressed with dedicated assertions. Add PMD rule to enforce it.&lt;/li&gt;
+  &lt;li&gt;Replace iterator loops with enhanced for loops, add a QA rule to enforce it.&lt;/li&gt;
+  &lt;li&gt;Run PMD checks on test sources as well.&lt;/li&gt;
+  &lt;li&gt;Use Collection.isEmpty() when checking for item availability&lt;/li&gt;
+  &lt;li&gt;Remove explicit types when diamond operator can be used instead. Added a PMD rule to enforce it.&lt;/li&gt;
+  &lt;li&gt;Remove or suppress unchecked casts, enable the Java compiler lint option for it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Although all these changes sound small in isolation, the fact that they are performed on the entire codebase, and checked each time a pull-request is proposed, really provides confidence in the technology we publish.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Andrea for this valuable work.&lt;/p&gt;
+
+&lt;h2 id=&quot;and-more&quot;&gt;And more!&lt;/h2&gt;
+
+&lt;p&gt;There are several other new features and improvements, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Upgrade SQL Server packaging to use open source JDBC driver&lt;/li&gt;
+  &lt;li&gt;Setting Entity Expansion limit on WFS XML Readers&lt;/li&gt;
+  &lt;li&gt;Tutorial on &lt;a href=&quot;https://docs.geoserver.org/latest/en/user/tutorials/cloud-foundry/run_cf.html&quot;&gt;running GeoServer in cloud foundry&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Updated DB2 &lt;a href=&quot;https://docs.geoserver.org/latest/en/user/data/database/db2.html&quot;&gt;installation instructions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Find out more in the &lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16814&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-geoserver-219&quot;&gt;About GeoServer 2.19&lt;/h2&gt;
+
+&lt;p&gt;Additional information on GeoServer 2.19 series:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-196&quot;&gt;Promote WMTS multidim to extension&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-195&quot;&gt;Promote WPS-Download to extension&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-194&quot;&gt;Promote params-extractor to extension&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-193&quot;&gt;Promote GWC-S3 to extension&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-197&quot;&gt;Promote WPS-JDBC to extension status&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/geoserver/geoserver/wiki/GSIP-200&quot;&gt;Promote MapML to extension status&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;main-branch.html&quot;&gt;GeoServer repository transition to main branch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Release notes (&lt;a href=&quot;https://osgeo-org.atlassian.net/jira/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16814&quot;&gt;2.19.0&lt;/a&gt; | &lt;a href=&quot;https://osgeo-org.atlassian.net/secure/ReleaseNote.jspa?projectId=10000&amp;amp;version=16766&quot;&gt;2.19-RC&lt;/a&gt; )&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Andrea Aime</name></author><category term="Announcements" /><category term="Release" /><summary type="html">We are happy to announce GeoServer 2.19.0 release is available for download (zip and war) along with docs and extensions.</summary></entry></feed>
